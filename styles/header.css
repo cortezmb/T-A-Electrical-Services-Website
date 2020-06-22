@@ -1,0 +1,9 @@
+header{
+    height: 400px;
+    width: 100%;
+}
+
+.childPosition{
+    top: 0px;
+    left: 0px;
+}
