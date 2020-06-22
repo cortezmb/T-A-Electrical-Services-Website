@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
   </head>
   <body>
 
@@ -48,13 +49,10 @@
 
         
 
-            <!-- Child of Text Layer: Button trigger modal -->
-            <div>
-              
-                <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modelId">
-                    For Same Day Service Click Here
-                </button>           
-            </div>
+            <!-- Child of Text Layer: Button trigger modal -->             
+            <button type="button" class="btn btn-warning btn-lg sticky-top" data-toggle="modal" data-target="#modelId">
+                For Same Day Service Click Here
+            </button>                     
 
         </div>
 
@@ -64,9 +62,9 @@
         </div>
 
         <!--Child of Header: Video-->
-        <div class="position-absolute embed-responsive embed-responsive-16by9 childPosition d-none d-md-block" style="z-index: 1;">
+        <div class="position-absolute embed-responsive embed-responsive-16by9 childPosition d-none d-md-block" style="z-index: 1; top: -200px;">
 
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/pY81XPS0_fM?autoplay=1&mute=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/pY81XPS0_fM?start=5&autoplay=1&mute=1&enablejsapi=1&loop=1&listType=playlist&playlist=pY81XPS0_fM&start=5&end=65" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <!--Child of Header: Image-->
@@ -76,8 +74,17 @@
         </div>
     </header>
 
+    <!--Navbar starts here-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand text-warning" href="#">T&A Electrical</a>
+        <a class="navbar-brand text-warning text" href="#">Call Us Today</a>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand text-light font-weight-bold" href="#"><i class="fas fa-mobile-alt text-warning p-1"></i>
+            (281)-399-8070</a>
 
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -87,19 +94,21 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link text-warning" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="#">
+                        <i class="fas fa-home text-warning"></i>
+                        Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Electrical Panel Change Services <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="#"><i class="fas fa-bolt text-warning"></i>
+                        Electrical Services <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Electrical Service Change Services <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="#"><i class="fas fa-network-wired text-warning"></i>
+                        Data Services <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Data Services <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us<span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-light" href="#"><i class="fas fa-map-marker-alt text-warning"></i>
+                        Contact Us<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -107,10 +116,52 @@
 
     <main>
 
-        <div class="row section bg-light"></div>
-        <div class="row section bg-dark"></div>
-        <div class="row section bg-light"></div>
-        <div class="row section bg-dark"></div>
+        <div class="row bg-light">
+
+            <!--Used col-md-6 for anything over medium device we want side by side. Anything smaller to stack.-->
+            <div class="col-6 p-4 flex-row text-center">
+
+                    <img src="https://image.flaticon.com/icons/png/512/15/15905.png" alt="" style="width: 100px; height: 100px;">               
+            </div>
+            <div class="col-6 row align-content-center">
+
+                Serving the Greater Houston Area 24 hours, 7 days per week.
+            </div>
+        </div>
+        <div class="row bg-dark">
+
+            <div class="col-6 p-4 flex-row text-center">
+
+                <img src="https://rockiespainting.ca/wp-content/uploads/2017/08/044196-glossy-black-3d-button-icon-25-years-exp.png" alt="" style="width: 100px; height: 100px;">
+            </div>
+            <div class="col-6 text-light row align-content-center">
+
+                Satisfying Houston residents for 25+ years.
+            </div>
+        </div>
+        <div class="row bg-light">
+
+            <div class="col-6 p-4 flex-row text-center">
+
+                <img src="https://cdn2.iconfinder.com/data/icons/black-stroke-labels-2/128/satisfaction_guarantee_label_customer_review-512.png" alt="" style="width: 100px; height: 100px;">
+            </div>
+
+            <div class="col-6 row align-content-center">
+
+                We back all of our work with a 100% money back guarantee. 
+            </div>
+        </div>
+        <div class="row bg-dark">
+
+            <div class="col-6 p-4 flex-row text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRiFMIeJX59bGSaXbB84hp-hmaBaIxVAwf4uz5DOnu6M9tJiaD&usqp=CAU" alt="" style="width: 100px; height: 100px;">
+            </div>
+
+            <div class="col-6 text-light row align-content-center">
+
+                Fully insured, licensed and bonded for your protection
+            </div>
+        </div>
         <div class="row section bg-light"></div>
     </main>
 
