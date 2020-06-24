@@ -11,3 +11,27 @@
 .lightGray{
     background-color: darkgrey;
 }
+
+.replaceDark{
+    color: #264653
+}
+
+.replaceBkDark{
+    background-color: #264653;
+}
+
+.replaceWarning{
+    color: #e9c46a
+}
+
+.replaceBkWarning{
+    background-color: #e9c46a
+}
+
+.textBackground1{
+    color: #f4a261
+}
+
+.textBackground2{
+    color: #e76f51
+}
